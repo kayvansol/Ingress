@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: my-claim2
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: my-local-storage
+  volumeName: my-local-pv2
+  resources:
+    requests:
+      storage: 1Gi   

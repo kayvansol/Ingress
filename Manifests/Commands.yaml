@@ -1,0 +1,28 @@
+
+kubectl create -f storageClass.yaml
+---
+
+# on the node, where the POD will be located (node1 in our case):
+DIRNAME="vol1"
+mkdir -p /mnt/disk/$DIRNAME 
+chcon -Rt svirt_sandbox_file_t /mnt/disk/$DIRNAME
+chmod 777 /mnt/disk/$DIRNAME
+---
+
+# on master:
+kubectl create -f persistentVolume.yaml
+---
+
+
+kubectl create -f persistentVolumeClaim.yaml   
+---
+
+kubectl create -f http-pod.yaml 
+---
+node1# echo "Hello local persistent volume" > /mnt/disk/vol1/index.html
+---
+# POD_IP=$(kubectl get pod www2-8488d9fb8c-v59nx  -o yaml | grep podIP | awk '{print $2}'); echo $POD_IP
+#www2-8488d9fb8c-fs5l6     www2-8488d9fb8c-tp7tv
+---
+curl $POD_IP
+

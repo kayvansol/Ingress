@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: www2
+  labels:
+    name: www2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: www2
+  template:
+    metadata:  
+      labels:
+        app: www2
+    spec:
+      containers:
+      - name: www2
+        image: nginx:alpine
+        ports:
+          - containerPort: 80
+            name: http
+          - containerPort: 443
+            name: https
+        volumeMounts:
+          - name: www2-persistent-storage
+            mountPath: /usr/share/nginx/html
+      volumes:
+        - name: www2-persistent-storage
+          persistentVolumeClaim:
+            claimName: my-claim2
+      nodeName: k8s-worker2
+  
+
+
+  
