@@ -7,16 +7,17 @@ Kubernetes cluster nodes :
 
 
 Install NGINX Ingress Controller :
+
     (https://docs.k0sproject.io/v1.23.6+k0s.2/examples/nginx-ingress)
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.0/deploy/static/provider/baremetal/deploy.yaml
 
 kubectl get all --namespace=ingress-nginx
 ```
-![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Nginx Ingress.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Nginx%20Ingress.png?raw=true)
 
 
-On the node, where the POD will be located (node1 in our case):
+On the node, where the POD will be located (node1 in our case) :
 ```
 DIRNAME="vol1"
 mkdir -p /mnt/disk/$DIRNAME 
@@ -79,8 +80,10 @@ sudo nano /etc/haproxy/haproxy.cfg
 
 
 DNS Record :
+
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/dns.png?raw=true)
 
 The result is :
+
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/web.png?raw=true)
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/app.png?raw=true)
