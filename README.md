@@ -18,7 +18,7 @@ kubectl get all --namespace=ingress-nginx
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Nginx%20Ingress.png?raw=true)
 
 
-On the node, where the POD will be located (node1 in our case) :
+On the node, where the POD will be located (node1 and node2 in our case) :
 ```
 DIRNAME="vol1"
 mkdir -p /mnt/disk/$DIRNAME 
@@ -73,7 +73,7 @@ kubectl apply -f Ingress.yaml
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/ingressDesc.png?raw=true)
 
 
-HAProxy config (192.168.56.118) :
+HAProxy config as a Load Balancer (192.168.56.118) :
 ```
 sudo nano /etc/haproxy/haproxy.cfg
 ```
