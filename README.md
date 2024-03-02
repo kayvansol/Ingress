@@ -1,6 +1,6 @@
 Setting up Ingress controller NGINX along with HAproxy for Microservice deployed inside Kubernetes cluster
 
-![alt text](Plan.jpg?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Plan.jpg?raw=true)
 
 Kubernetes cluster nodes :
 ![alt text](nodes.png?raw=true)
