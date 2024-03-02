@@ -3,7 +3,7 @@ Setting up Ingress controller NGINX along with HAproxy for Microservice deployed
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Plan.jpg?raw=true)
 
 Kubernetes cluster nodes :
-![alt text](nodes.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/nodes.png?raw=true)
 
 
 Install NGINX Ingress Controller :
@@ -13,7 +13,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 
 kubectl get all --namespace=ingress-nginx
 ```
-![alt text](Nginx Ingress.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Nginx Ingress.png?raw=true)
 
 
 On the node, where the POD will be located (node1 in our case):
@@ -34,7 +34,7 @@ kubectl apply -f persistentVolume1.yaml
 kubectl apply -f persistentVolumeClaim.yaml
 kubectl apply -f persistentVolumeClaim1.yaml
 ```
-![alt text](pvc.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/pvc.png?raw=true)
 
 
 Deploy the apps :
@@ -42,9 +42,9 @@ Deploy the apps :
 kubectl apply -f http-pod1.yaml
 kubectl apply -f http-pod.yaml
 ```
-![alt text](deploymentds.png?raw=true)
-![alt text](pods.png?raw=true)
-![alt text](PodDesciption.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/deploymentds.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/pods.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/PodDesciption.png?raw=true)
 
 
 Get pod ip & curl the related web app:
@@ -59,28 +59,28 @@ Deploy the Services :
 kubectl apply -f IngressService.yaml
 kubectl apply -f IngressService1.yaml
 ```
-![alt text](svc.png?raw=true)
-![alt text](svcDesc.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/svc.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/svcDesc.png?raw=true)
 
 
 Deploy the Ingress resource :
 ```
 kubectl apply -f Ingress.yaml
 ```
-![alt text](ingress.png?raw=true)
-![alt text](ingressDesc.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/ingress.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/ingressDesc.png?raw=true)
 
 
 HAProxy config (192.168.56.118) :
 ```
 sudo nano /etc/haproxy/haproxy.cfg
 ```
-![alt text](haproxy.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/haproxy.png?raw=true)
 
 
 DNS Record :
-![alt text](dns.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/dns.png?raw=true)
 
 The result is :
-![alt text](web.png?raw=true)
-![alt text](app.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/web.png?raw=true)
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/app.png?raw=true)
