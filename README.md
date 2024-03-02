@@ -8,7 +8,8 @@ Kubernetes cluster nodes :
 
 Install NGINX Ingress Controller :
 
-    (https://docs.k0sproject.io/v1.23.6+k0s.2/examples/nginx-ingress)
+https://docs.k0sproject.io/v1.23.6+k0s.2/examples/nginx-ingress
+
 ```
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.0/deploy/static/provider/baremetal/deploy.yaml
 
