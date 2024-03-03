@@ -2,7 +2,7 @@
 
 Setting up Ingress controller NGINX along with HAproxy for Microservice deployed inside Kubernetes cluster (Bare-metal servers) is in progress :
 
-General Design :
+General Design (big picture) :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Plan.jpg?raw=true)
 
