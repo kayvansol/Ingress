@@ -8,6 +8,17 @@ General Design :
 
 All files needed for deployments are available at Manifests folder.
 
+The control-plane & worker nodes addresses are :
+```
+192.168.56.115
+192.168.56.116
+192.168.56.117
+```
+and HAProxy as a Load Balancer :
+```
+192.168.56.118
+```
+
 Kubernetes cluster nodes :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/nodes.png?raw=true)
