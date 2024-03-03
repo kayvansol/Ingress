@@ -62,8 +62,8 @@ kubectl apply -f persistentVolumeClaim1.yaml
 
 Deploy the web apps :
 ```
-kubectl apply -f http-pod1.yaml
 kubectl apply -f http-pod.yaml
+kubectl apply -f http-pod1.yaml
 ```
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/deploymentds.png?raw=true)
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/pods.png?raw=true)
