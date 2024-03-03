@@ -80,18 +80,18 @@ kubectl apply -f Ingress.yaml
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/ingressDesc.png?raw=true)
 
 
-HAProxy config as a Load Balancer (192.168.56.118) :
+HAProxy config as a Load Balancer (On 192.168.56.118) :
 ```
 sudo nano /etc/haproxy/haproxy.cfg
 ```
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/haproxy.png?raw=true)
 
 
-DNS Record :
+DNS Record (On DNS Server) :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/dns.png?raw=true)
 
-The result is :
+The final result is ☸️ :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/web.png?raw=true)
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/app.png?raw=true)
