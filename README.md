@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/kubernetes.gif?raw=true)
+
 Setting up Ingress controller NGINX along with HAproxy for Microservice deployed inside Kubernetes cluster is in progress :
 
 General Design :
@@ -91,7 +93,7 @@ DNS Record (On DNS Server) :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/dns.png?raw=true)
 
-The final result is ☸️ :
+The final result is 🍹 :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/web.png?raw=true)
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/app.png?raw=true)
