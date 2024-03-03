@@ -6,6 +6,7 @@ General Design :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Plan.jpg?raw=true)
 
+All files needed for deployments are available at Manifests folder.
 
 Kubernetes cluster nodes :
 
