@@ -28,11 +28,13 @@ The Steps :
 
 1) Install NGINX Ingress Controller from :
 ```
-https://docs.k0sproject.io/v1.23.6+k0s.2/examples/nginx-ingress
+#https://docs.k0sproject.io/v1.23.6+k0s.2/examples/nginx-ingress
+https://docs.k0sproject.io/main/examples/nginx-ingress
 ```
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.0/deploy/static/provider/baremetal/deploy.yaml
+#kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.0.0/deploy/static/provider/baremetal/deploy.yaml
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.1.3/deploy/static/provider/baremetal/deploy.yaml
 
 kubectl get all --namespace=ingress-nginx
 ```
