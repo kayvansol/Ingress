@@ -14,6 +14,8 @@ The control-plane & worker nodes addresses are :
 192.168.56.116
 192.168.56.117
 ```
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/vmnet.png?raw=true)
+
 and HAProxy as a Load Balancer :
 ```
 192.168.56.118
