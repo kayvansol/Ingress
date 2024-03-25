@@ -1,6 +1,7 @@
-![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/kubernetes.gif?raw=true)
 
-Setting up Ingress controller NGINX along with HAproxy for Microservice deployed inside Kubernetes cluster (Bare-metal servers) is in progress :
+Setting up **Ingress controller NGINX** along with HAproxy for Microservice deployed inside **Kubernetes cluster** (Bare-metal servers) 
+
+![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/kubernetes-nginx.jpg?raw=true)
 
 General Design (big picture) :
 
@@ -38,7 +39,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 
 kubectl get all --namespace=ingress-nginx
 ```
-Ingress-Nginx workloads (ingress port is 30798) :
+Ingress-Nginx workloads (ingress port is **30798**) :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Nginx%20Ingress.png?raw=true)
 
@@ -65,7 +66,7 @@ kubectl apply -f persistentVolumeClaim1.yaml
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/pvc.png?raw=true)
 
 ***
-4) Deploy the web apps :
+4) Deploy the **web apps** :
 ```
 kubectl apply -f http-pod.yaml
 kubectl apply -f http-pod1.yaml
@@ -83,7 +84,7 @@ curl $POD_IP
 ```
 
 ***
-5) Deploy the Services :
+5) Deploy the **Services** :
 ```
 kubectl apply -f IngressService.yaml
 kubectl apply -f IngressService1.yaml
@@ -92,7 +93,7 @@ kubectl apply -f IngressService1.yaml
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/svcDesc.png?raw=true)
 
 ***
-6) Deploy the Ingress resource :
+6) Deploy the **Ingress resource** :
 ```
 kubectl apply -f Ingress.yaml
 ```
@@ -100,7 +101,7 @@ kubectl apply -f Ingress.yaml
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/ingressDesc.png?raw=true)
 
 ***
-7) HAProxy config as a Load Balancer (On 192.168.56.118) :
+7) HAProxy config as a **Load Balancer** (On 192.168.56.118) :
 ```
 sudo nano /etc/haproxy/haproxy.cfg
 ```
