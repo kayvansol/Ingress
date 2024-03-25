@@ -1,5 +1,5 @@
 
-Setting up **Ingress controller NGINX** along with HAproxy for Microservice deployed inside **Kubernetes cluster** (Bare-metal servers) 
+Setting up **Ingress controller NGINX** (as a router) along with HAproxy for Microservice deployed inside **Kubernetes cluster** (Bare-metal servers) 
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/kubernetes-nginx.jpg?raw=true)
 
