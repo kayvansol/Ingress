@@ -39,7 +39,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/cont
 
 kubectl get all --namespace=ingress-nginx
 ```
-Ingress-Nginx workloads (ingress port is **30798**) :
+Ingress-Nginx workloads (ingress port in our case is **30798**) :
 
 ![alt text](https://raw.githubusercontent.com/kayvansol/Ingress/main/pics/Nginx%20Ingress.png?raw=true)
 
